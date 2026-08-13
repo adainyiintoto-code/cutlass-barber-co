@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Book a Cut — Cutlass Barber Co.</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="navbar">
+  <a class="brand" href="index.html">
+    <div class="brand-mark">C</div>
+    <div>
+      <div class="brand-name">CUTLASS</div>
+      <div class="brand-sub">BARBER CO.</div>
+    </div>
+  </a>
+  <nav class="nav-links">
+    <a href="services.html">Services</a>
+    <a href="work.html">Work</a>
+    <a href="book.html" aria-current="page">Book</a>
+  </nav>
+  <a class="cta-btn" href="book.html">Book a Cut</a>
+  <button class="menu-btn" data-menu aria-label="Open menu">☰</button>
+</header>
+<div class="mobile-menu" data-mobile-menu>
+  <button class="close-btn" data-close-menu-btn aria-label="Close menu">✕</button>
+  <div class="panel">
+    <a data-close-menu href="services.html">Services</a>
+    <a data-close-menu href="work.html">Work</a>
+    <a data-close-menu href="book.html">Book</a>
+  </div>
+</div>
+
+<section class="hero" style="padding-bottom:60px;">
+  <div class="wrap">
+    <div class="eyebrow reveal">Book a slot</div>
+    <h1 class="reveal" style="font-size:clamp(2.4rem,5.6vw,4rem);">Get in the chair.</h1>
+    <p class="hero-lead reveal" style="margin-top:16px;">Fill this in and we'll confirm your slot by phone or email. Prefer to just call? 0800 000 0000.</p>
+  </div>
+</section>
+
+<section class="section" style="border-bottom:none;">
+  <div class="wrap">
+    <!--
+      This uses FormSubmit.co — no backend needed.
+      IMPORTANT: after deploying, update the _url and _next hidden fields
+      below to match your real live URL exactly, or FormSubmit may not
+      verify the form and the activation email won't send. See README.txt.
+    -->
+    <form class="form reveal" action="https://formsubmit.co/chukwumeziefavour88@gmail.com" method="POST">
+      <div class="form-grid">
+        <div class="field"><label for="name">Name</label><input id="name" required name="name" type="text" placeholder="Your name"></div>
+        <div class="field"><label for="phone">Phone</label><input id="phone" required name="phone" type="tel" placeholder="081..."></div>
+      </div>
+      <div class="form-grid">
+        <div class="field"><label for="service">Service</label>
+          <select id="service" required name="service">
+            <option value="">Select a service</option>
+            <option>Skin Fade — ₦6,000</option>
+            <option>Classic Cut — ₦4,500</option>
+            <option>Beard Sculpt — ₦3,000</option>
+            <option>Cut + Beard Combo — ₦8,500</option>
+            <option>Hot Towel Shave — ₦5,000</option>
+            <option>Kids Cut — ₦3,500</option>
+          </select>
+        </div>
+        <div class="field"><label for="day">Preferred day</label><input id="day" required name="preferred_day" type="text" placeholder="e.g. Saturday"></div>
+      </div>
+      <div class="field"><label for="notes">Notes</label><textarea id="notes" name="notes" placeholder="Anything we should know before you sit down"></textarea></div>
+
+      <input type="hidden" name="_subject" value="New Cutlass booking request">
+      <input type="hidden" name="_template" value="table">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_next" value="https://REPLACE_WITH_YOUR_DOMAIN/thanks.html">
+      <input type="hidden" name="_url" value="https://REPLACE_WITH_YOUR_DOMAIN/book.html">
+
+      <button class="submit-btn" type="submit">Request Booking</button>
+    </form>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="wrap footer-grid">
+    <div>
+      <div class="brand-name" style="font-size:1.3rem;">CUTLASS</div>
+      <div style="color:var(--paper-dim); margin-top:6px; font-size:.9rem;">Sharp, every time.</div>
+    </div>
+    <div>
+      <a href="tel:08000000000">0800 000 0000</a>
+      <a href="mailto:chukwumeziefavour88@gmail.com">chukwumeziefavour88@gmail.com</a>
+      <a href="book.html">Tue–Sat · 9am–7pm</a>
+    </div>
+  </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
